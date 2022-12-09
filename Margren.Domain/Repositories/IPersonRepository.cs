@@ -12,5 +12,7 @@ namespace Margren.Domain.Repositories
     {
         Task<Person> GetPersonById(PersonId id);
         Task AddPerson(Person person);
+        Task<List<Person>> GetAllPerson();
+
     }
 }

@@ -15,6 +15,7 @@ namespace Margren.Domain.ValueObjects
         }
         public static PersonName Create(string value)
         {
+            validate(value);
             return new PersonName(value);
         }
         private static void validate(string value)
@@ -22,6 +23,10 @@ namespace Margren.Domain.ValueObjects
             if (value == null)
             {
                 throw new ArgumentNullException("El valor no puede ser nulo");
+            }
+            if(value.Length > 50)
+            {
+                throw new Exception("El nombre supera el maximo de caracteres permitidos");
             }
         }
     }

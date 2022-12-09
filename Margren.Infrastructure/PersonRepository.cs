@@ -20,13 +20,19 @@ namespace Margren.Infrastructure
         }
         public async Task AddPerson(Person person)
         {
+            
             await db.AddAsync(person);
             await db.SaveChangesAsync();
         }
 
+        public Task<List<Person>> GetAllPerson()
+        {
+            throw new NotImplementedException();
+        }
+
         public async Task<Person> GetPersonById(PersonId Id)
         {
-            return await db.Persons.FindAsync((Guid)Id);
+            return await db.PERSONAS.FindAsync(Id.value);
         }
     }
 }

@@ -1,0 +1,12 @@
+C:\Users\eduar\source\repos\MargrenProyectBackend\Margren.Domain\bin\Debug\net6.0\Margren.Domain.deps.json
+C:\Users\eduar\source\repos\MargrenProyectBackend\Margren.Domain\bin\Debug\net6.0\Margren.Domain.dll
+C:\Users\eduar\source\repos\MargrenProyectBackend\Margren.Domain\bin\Debug\net6.0\Margren.Domain.pdb
+C:\Users\eduar\source\repos\MargrenProyectBackend\Margren.Domain\obj\Debug\net6.0\Margren.Domain.csproj.AssemblyReference.cache
+C:\Users\eduar\source\repos\MargrenProyectBackend\Margren.Domain\obj\Debug\net6.0\Margren.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\eduar\source\repos\MargrenProyectBackend\Margren.Domain\obj\Debug\net6.0\Margren.Domain.AssemblyInfoInputs.cache
+C:\Users\eduar\source\repos\MargrenProyectBackend\Margren.Domain\obj\Debug\net6.0\Margren.Domain.AssemblyInfo.cs
+C:\Users\eduar\source\repos\MargrenProyectBackend\Margren.Domain\obj\Debug\net6.0\Margren.Domain.csproj.CoreCompileInputs.cache
+C:\Users\eduar\source\repos\MargrenProyectBackend\Margren.Domain\obj\Debug\net6.0\Margren.Domain.dll
+C:\Users\eduar\source\repos\MargrenProyectBackend\Margren.Domain\obj\Debug\net6.0\refint\Margren.Domain.dll
+C:\Users\eduar\source\repos\MargrenProyectBackend\Margren.Domain\obj\Debug\net6.0\Margren.Domain.pdb
+C:\Users\eduar\source\repos\MargrenProyectBackend\Margren.Domain\obj\Debug\net6.0\ref\Margren.Domain.dll
