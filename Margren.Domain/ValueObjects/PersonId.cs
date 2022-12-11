@@ -8,15 +8,15 @@ namespace Margren.Domain.ValueObjects
 {
     public record PersonId
     {
-        public int value {get; set;}
+        public int value {get; init;}
 
-        internal PersonId(int value_)
+        internal PersonId(int value)
         {
-            value = value_;
+            this.value = value;
         }
         public static PersonId create(int value)
         {
-            
+           
             return new PersonId(value);
         }
         public static implicit operator int(PersonId personId)

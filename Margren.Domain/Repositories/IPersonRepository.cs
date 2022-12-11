@@ -13,6 +13,9 @@ namespace Margren.Domain.Repositories
         Task<Person> GetPersonById(PersonId id);
         Task AddPerson(Person person);
         Task<List<Person>> GetAllPerson();
+        Task UpdatePerson(Person person);
+        Task<int> GetIdPersonByEmail(Email email);
+        Task DeletePerson(int id);
 
     }
 }

@@ -13,7 +13,24 @@ namespace Margren.Domain.Entities
         public Email email { get; set; }
         public RolName rol_name { get; set; }
         public PersonId id_person { get; set; }
+        public Hash password { get; set; } 
 
+        public User()
+        {
 
+        }
+        public User(int id_user, Email email, RolName rol_name, PersonId id_person, Hash password)
+        {
+            this.id_user = id_user;
+            this.email = email;
+            this.rol_name = rol_name;
+            this.id_person = id_person;
+            this.password = password;
+
+        }
+        public User(int id_user)
+        {
+            this.id_user = id_user;
+        }
     }
 }

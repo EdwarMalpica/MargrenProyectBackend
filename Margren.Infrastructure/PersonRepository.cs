@@ -25,7 +25,17 @@ namespace Margren.Infrastructure
             await db.SaveChangesAsync();
         }
 
+        public Task DeletePerson(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         public Task<List<Person>> GetAllPerson()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<int> GetIdPersonByEmail(Email email)
         {
             throw new NotImplementedException();
         }
@@ -33,6 +43,12 @@ namespace Margren.Infrastructure
         public async Task<Person> GetPersonById(PersonId Id)
         {
             return await db.PERSONAS.FindAsync(Id.value);
+        }
+
+        public async Task UpdatePerson(Person person)
+        {
+            db.Update(person);
+            db.SaveChanges();
         }
     }
 }

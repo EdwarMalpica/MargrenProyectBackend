@@ -58,7 +58,11 @@ namespace Margren.Infrastructure
             });
             modelBuilder.Entity<User>().OwnsOne(o => o.id_person, conf =>
             {
-                conf.Property(x=>x).HasColumnName("id_person");
+                conf.Property(x => x.value).HasColumnName("id_person");
+            });
+            modelBuilder.Entity<User>().OwnsOne(o => o.password, conf =>
+            {
+                conf.Property(x => x.value).HasColumnName("password");
             });
 
 

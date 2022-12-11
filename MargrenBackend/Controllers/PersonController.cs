@@ -26,9 +26,10 @@ namespace MargrenBackend.Controllers
         [HttpPost("createPerson")]
         public async Task<IActionResult> AddPerson(CreatePersonCommand createPersonCommand)
         {
-            return Ok(await personServices.HandleCommand(createPersonCommand));
-            /*try
+            
+            try
             {
+                return Ok(await personServices.HandleCommand(createPersonCommand));
             }
             catch (Microsoft.EntityFrameworkCore.DbUpdateException ex)
             {
@@ -37,15 +38,15 @@ namespace MargrenBackend.Controllers
             catch (Exception ex)
             {
                 return Ok(ContentResponse.createResponse(false, "ERROR AL CREAR PERSONA", ex.Message));
-            }*/
+            }
         }
         
-        /*[HttpPost("updatePerson")]
+        [HttpPost("updatePerson")]
         public async Task<IActionResult> UpdateUser(UpdatePersonCommand updatePerson)
         {
             return Ok(await personServices.HandleCommand(updatePerson));
         }
-
+        /*
         [HttpPost("updateUser")]
         public async Task<IActionResult> UpdateUser(UpdateUserCommand updatePerson)
         {

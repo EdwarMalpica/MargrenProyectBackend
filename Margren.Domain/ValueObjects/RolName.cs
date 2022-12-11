@@ -12,8 +12,13 @@ namespace Margren.Domain.ValueObjects
         
         internal RolName(string value)
         {
-            validate(value);
+           
             this.value = value;
+        }
+        public static RolName create(string value)
+        {
+            validate(value);
+            return new RolName(value);
         }
         private static void validate(string value)
         {

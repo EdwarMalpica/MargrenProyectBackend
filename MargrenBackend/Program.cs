@@ -16,7 +16,9 @@ builder.Services.AddDbContext<DataBaseContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("MargrenDB"));
 });
 builder.Services.AddScoped<IPersonRepository, PersonRepository>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<LiveServices>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
