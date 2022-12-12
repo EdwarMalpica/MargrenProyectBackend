@@ -46,6 +46,21 @@ namespace MargrenBackend.Controllers
         {
             return Ok(await personServices.HandleCommand(updatePerson));
         }
+
+
+
+        
+
+        [AllowAnonymous]
+        [HttpPost("login")]
+        public async Task<IActionResult> login(LoginComand login)
+        {
+            var response = await personServices.HandleCommand(login);
+            return Ok(response);
+        }
+
+
+
         /*
         [HttpPost("updateUser")]
         public async Task<IActionResult> UpdateUser(UpdateUserCommand updatePerson)

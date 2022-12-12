@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Margren.Domain.Entities.Buy">
+    <Position X="10.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAEAAAAAAAgAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Buy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Margren.Domain.Entities.Address">
+    <Position X="6" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAQgAAQAAAAAAAAIAAAgAAAAAAAAAIAAAACAAAAAAA=</HashCode>
+      <FileName>Entities\Address.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Margren.Domain.Entities.Coordinate">
+    <Position X="8.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAAAACAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Entities\Coordinate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Margren.Domain.Entities.Ingredient">
+    <Position X="4" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAABQgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Ingredient.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Margren.Domain.Entities.Inventory">
+    <Position X="2.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIEAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Inventory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Margren.Domain.Entities.Person">
+    <Position X="4" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>SAAAACAAIAAAAQQAACAAgAAAQAAAAACAAAAAAAAAQAA=</HashCode>
+      <FileName>Entities\Person.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Margren.Domain.Entities.Place">
+    <Position X="5.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAAAEAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Entities\Place.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Margren.Domain.Entities.Prescription">
+    <Position X="8.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAABAAAAAAAAAAAAAAEAAABEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Prescription.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Margren.Domain.Entities.Product">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAABAAAAAAAAAAAAIABAAAAAAAARAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Product.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Margren.Domain.Entities.RegisterInventory">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABEAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\RegisterInventory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Margren.Domain.Entities.RLShop">
+    <Position X="5.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAABEAAAAAAAQgACAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\RLShop.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Margren.Domain.Entities.ShopList">
+    <Position X="8.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAAAAAAAAAAAAAAgAAAIAAAAQAAAAA=</HashCode>
+      <FileName>Entities\ShopList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Margren.Domain.Entities.Step">
+    <Position X="2.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAABAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Entities\Step.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Margren.Domain.Entities.User">
+    <Position X="2.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAgAAQAAAAAAAAAAAAAIAAAAgAAAAA=</HashCode>
+      <FileName>Entities\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

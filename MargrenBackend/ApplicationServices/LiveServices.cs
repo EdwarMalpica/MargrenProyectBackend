@@ -3,6 +3,10 @@ using Margren.Domain.Repositories;
 using Margren.Domain.ValueObjects;
 using Margren.Infrastructure;
 using MargrenBackend.Commands;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
 //using MargrenBackend.Queries;
 
 namespace MargrenBackend.ApplicationServices
@@ -12,13 +16,15 @@ namespace MargrenBackend.ApplicationServices
         private readonly IPersonRepository repository;
         private readonly IUserRepository userRepository;
         //private readonly PersonQueries personQueries;
+        private IConfiguration config;
 
-        public LiveServices(IPersonRepository repository, IUserRepository userRepository
+        public LiveServices(IPersonRepository repository, IUserRepository userRepository, IConfiguration config
             )
         {
 
             this.repository = repository;
             this.userRepository = userRepository;
+            this.config = config;
             //this.personQueries = personQueries;
         }
         //PERSONAS
@@ -107,6 +113,65 @@ namespace MargrenBackend.ApplicationServices
             return ContentResponse.createResponse(false, "No se pudo actualizar la persona", "Persona No encontrada");
 
         }
+
+        //LOGIN
+        public async Task<ContentResponse> HandleCommand(LoginComand loginCommand)
+        {
+            try
+            {
+                User user = await userRepository.GetPasswordByEmail(Email.create(loginCommand.email));
+                if (user != null)
+                {
+                    Password login = new Password(user.password.value);
+                    if (login != null)
+                    {
+                        if (login.password.value.SequenceEqual(Hash.create(loginCommand.password).value))
+                        {
+                            //int id_user = await userRepository.GetIdPersonByLogin(UserLogin.create(loginCommand.login));
+                            //if (id_user == 0)
+                            //{
+                            //    return ContentResponse.createResponse(true, "INACTIVO", "El usuario cuenta con un estado inactivo");
+                            //}
+                            //Console.WriteLine("Antes");
+                            string role = await userRepository.getRoleByIdUser(user.email);
+                            //Console.WriteLine("" + role);
+                            return ContentResponse.createResponse(true, "LOGIN", generateToken(role, loginCommand.email, user.id_user));
+                        }
+                        return ContentResponse.createResponse(false, "CONTRASEÑA INCORRECTA", null);
+                    }
+                }
+                
+                return ContentResponse.createResponse(false, "USUARIO NO ENCONTRADO", null);
+            }
+            catch (Exception ex)
+            {
+                return ContentResponse.createResponse(false, "ERROR AL REALIZAR LOGIN", ex.Message);
+            }
+        }
+
+
+        //TOKEN
+        private string generateToken(string role, string email, int id_user)
+        {
+            List<Claim> claimList = new List<Claim>();
+            claimList.Add(new Claim("role", role));
+            claimList.Add(new Claim("email", email));
+            claimList.Add(new Claim("id_person", id_user.ToString()));
+
+            var claims = claimList.ToArray();
+
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(config.GetSection("JWT:Key").Value));
+            var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha512Signature);
+
+            var securityToken = new JwtSecurityToken(
+                                     claims: claims,
+                                     expires: DateTime.Now.AddHours(8),
+                                     signingCredentials: creds);
+
+            var token = new JwtSecurityTokenHandler().WriteToken(securityToken);
+            return token;
+        }
+
 
     }
 }

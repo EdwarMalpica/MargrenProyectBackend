@@ -28,6 +28,18 @@ namespace Margren.Infrastructure
             throw new NotImplementedException();
         }
 
+        public async Task<User> GetPasswordByEmail(Email email)
+        {
+
+            return  db.USERS.Where(o => o.email.value == email.value).FirstOrDefault();
+        }
+
+        public async Task<string> getRoleByIdUser(Email email)
+        {
+            User user = db.USERS.Where(o => o.email.value == email.value).FirstOrDefault();
+            return user.rol_name.value;
+        }
+
         public async Task<User> GetUserById(UserId id)
         {
             return await db.USERS.FindAsync(id.value);

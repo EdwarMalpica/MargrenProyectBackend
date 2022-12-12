@@ -30,7 +30,7 @@ namespace Margren.Domain.ValueObjects
             {
                 throw new Exception("No puede ser vacio el rol");
             }
-            if(value !="Cliente" || value !="Admin"||value != "Vendedor")
+            if(value !="Cliente" && value !="Admin"&&value != "Vendedor")
             {
                 throw new Exception("No es un rol permitodo, los roles permitodos son: Cliente, Admin, Vendendor");
             }

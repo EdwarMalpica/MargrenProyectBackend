@@ -21,6 +21,10 @@ namespace Margren.Domain.ValueObjects
             validate(value);
             return new Hash(encrypt(value));
         }
+        public static Hash create(byte[] value)
+        {
+            return new Hash(value);
+        }
 
         private static byte[] encrypt(string value)
         {

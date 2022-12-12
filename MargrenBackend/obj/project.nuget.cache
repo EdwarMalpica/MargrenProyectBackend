@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "yleom7iavvDF0DYGn0bCvqRVGCX7jufm67jPJWQQ/0r2/Yqt908XKtP2dcJF7WBk08GeCs7lvn3Vght1uZ9Idw==",
+  "dgSpecHash": "C62yMHJHXhzL9wiceWixG1Aoz4b02DBX+0nxfejGx0RZ1Ey9q/UhDdCSUCcnwLYrx+MWFr5DVs99UwpXziqVDw==",
   "success": true,
   "projectFilePath": "C:\\Users\\eduar\\source\\repos\\MargrenProyectBackend\\MargrenBackend\\MargrenBackend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\eduar\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\eduar\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\eduar\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.10\\microsoft.aspnetcore.authentication.jwtbearer.6.0.10.nupkg.sha512",
     "C:\\Users\\eduar\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\eduar\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\eduar\\.nuget\\packages\\microsoft.data.sqlclient\\5.0.1\\microsoft.data.sqlclient.5.0.1.nupkg.sha512",

@@ -9,6 +9,7 @@ namespace Margren.Domain.Entities
 {
     public class RegisterInventory
     {
+        public int id_register_inventory { get; set; }
         public InventoryId id_inventory { get; set; }
         public ProductId id_product { get; set; }
         public RIQuantity quantity { get; set; }

@@ -31,7 +31,7 @@ namespace Margren.Domain.ValueObjects
             }
             if (value.Length > 30)
             {
-                throw new Exception("El rango maximo es 30")
+                throw new Exception("El rango maximo es 30");
             }
         }
     }

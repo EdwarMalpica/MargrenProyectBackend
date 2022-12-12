@@ -1,4 +1,5 @@
 ﻿using Margren.Domain.Entities;
+using Margren.Domain.ValueObjects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,7 @@ namespace Margren.Domain.Repositories
 {
     public interface IAddressRepository
     {
-        Task<Address> GetAddressById(int id);
+        Task<Address> GetAddressById(AddressId id);
         Task<Address> GetAddressByName(string name);
         Task AddAddress(Address address);
         Task UpdateAddress(Address address);

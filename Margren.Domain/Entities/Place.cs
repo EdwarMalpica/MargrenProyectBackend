@@ -9,7 +9,7 @@ namespace Margren.Domain.Entities
 {
     public class Place
     {
-        public int id_place { get; set; }
+        public int id_lugar { get; set; }
         public NamePlace name { get; set; }
         public PlaceId id_region { get; set; }   
     }

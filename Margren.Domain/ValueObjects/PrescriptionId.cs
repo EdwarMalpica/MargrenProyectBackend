@@ -8,7 +8,7 @@ namespace Margren.Domain.ValueObjects
 {
     public record PrescriptionId
     {
-        public int value { get; set; }
+        public int value { get; init; }
         internal PrescriptionId(int value)
         {
             this.value = value;

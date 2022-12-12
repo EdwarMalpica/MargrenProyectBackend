@@ -11,9 +11,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{27E491FD-C05
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{F8817E32-E8B7-4FFA-95C3-2D9D7364DC49}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Margren.Domain", "Margren.Domain\Margren.Domain.csproj", "{5E4A6404-0566-4E95-AA1E-C83C29215E01}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Margren.Domain", "Margren.Domain\Margren.Domain.csproj", "{5E4A6404-0566-4E95-AA1E-C83C29215E01}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Margren.Infrastructure", "Margren.Infrastructure\Margren.Infrastructure.csproj", "{D93DA8AC-6674-4095-976B-666BFC5ABA9B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Margren.Infrastructure", "Margren.Infrastructure\Margren.Infrastructure.csproj", "{D93DA8AC-6674-4095-976B-666BFC5ABA9B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementos de la solución", "Elementos de la solución", "{D29E81B0-7885-4DD5-BC00-3E341F5DF013}"
+	ProjectSection(SolutionItems) = preProject
+		DiagramaUml.cd = DiagramaUml.cd
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

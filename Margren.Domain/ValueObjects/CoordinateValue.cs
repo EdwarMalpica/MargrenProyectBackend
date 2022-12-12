@@ -23,9 +23,10 @@ namespace Margren.Domain.ValueObjects
             {
                 throw new Exception("El valor no puede ser nulo");
             }
-            if(value.Length > 30)
+            if (value.Length > 30)
             {
                 throw new Exception("El valor no puede ser mayor a 30 caracteres");
             }
         }
+    }
 }

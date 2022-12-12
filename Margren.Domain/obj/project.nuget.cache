@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "IG13f0R11CXZ08xddScxRhtWSG63oNJRF41vO7PqoHj+QrBWnSFZZRXNFT5Ee+p8jNFN2mRRDsHEijbDn+wZGA==",
+  "dgSpecHash": "u6JfdgZwBfD1RbdDuYVHEeiS8xiKoVqAL3EbMqv29zbg7f9teh2snW4LbZAEbDPzkN0W00ru6l0TpswGE0s6mg==",
   "success": true,
   "projectFilePath": "C:\\Users\\eduar\\source\\repos\\MargrenProyectBackend\\Margren.Domain\\Margren.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\eduar\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.0\\microsoft.entityframeworkcore.abstractions.7.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

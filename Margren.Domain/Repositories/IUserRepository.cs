@@ -13,5 +13,7 @@ namespace Margren.Domain.Repositories
         Task<User> GetUserById(UserId id);
         Task AddUser(User user);
         Task<List<User>> GetAllUsers();
+        Task<User> GetPasswordByEmail(Email email);
+        Task<string> getRoleByIdUser(Email email);
     }
 }

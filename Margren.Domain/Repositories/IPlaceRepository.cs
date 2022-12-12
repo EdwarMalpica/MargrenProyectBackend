@@ -1,4 +1,5 @@
 ﻿using Margren.Domain.Entities;
+using Margren.Domain.ValueObjects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,7 @@ namespace Margren.Domain.Repositories
 {
     public interface IPlaceRepository
     {
-        Task<Place> GetPlaceById(int id);
+        Task<Place> GetPlaceById(PlaceId id);
         Task AddPlace(Place place);
         Task UpdatePlace(Place place);
     }
